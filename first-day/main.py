@@ -1,1 +1,4 @@
-print('My name is Muhammad Muddasir')
+print("Hello World")
+
+print("Pakistan")
+print(26+12)
