@@ -1,20 +1,41 @@
-#variables and data types
-a = ("muddasir")
-print(a)
-m = 2024
-print(m)
-r = True
-print(r)
+def add(x, y):
+    return x + y
 
-t1 = 11
-print(m + t1) 
-# Types 'str'
-print("type of a is" , type(a))
-# type 'int'
-print(type(m))
-# type 'bool'
-print(type(r))
+def subtract(x, y):
+    return x - y
 
-# LIST
-list1 = [12, 22.32, [121, 786], ["banan", "apple"]]
-print(list1)
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero"
+
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = input("Enter choice (1/2/3/4): ")
+
+if choice in ('1', '2', '3', '4'):
+    num1 = float(input("phla number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == '1':
+        print(num1, "+", num2, "=", add(num1, num2))
+
+    elif choice == '2':
+        print(num1, "-", num2, "=", subtract(num1, num2))
+
+    elif choice == '3':
+        print(num1, "*", num2, "=", multiply(num1, num2))
+
+    elif choice == '4':
+        print(num1, "/", num2, "=", divide(num1, num2))
+
+else:
+    print("Invalid input")
