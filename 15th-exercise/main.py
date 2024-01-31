@@ -1,3 +1,4 @@
+
 # a = int(input("enter the number: "))
 # while(a<=20):
 #     a = int(input("enter the number: "))
@@ -11,4 +12,3 @@ while number < 20:
     number += 1
 
 print("Stopped because the number is now greater than or equal to 20.")
- 
