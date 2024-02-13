@@ -1,3 +1,4 @@
+
 # list method
 list = [32,23,23,21,33,12]
 print(list)
@@ -21,4 +22,3 @@ list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 ck = list1 + list2
 print(ck)
-
