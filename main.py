@@ -1,16 +1,17 @@
-marks = [1, 2, 3, 4, 66, 79, 12]
+import os
 
 
-for index, mark in enumerate(marks):
+if( not os.path.exists("data")):
+ os.mkdir("data")
 
-    print(mark)
 
-    if(index == 4):
-     print("Muddasir, Awesom")
+for i in range(0, 100):
+#     os.mkdir(f"data/day{i+1}")
 
-fruits = ("apple", "banana", "kiwi" )  
-for index, fruit in enumerate(fruits)  :
-   print(fruit)
-   if(index == 2):
-      print("I love it")
-      
+
+    # rename fuction method
+    os.rename(f"data/tutorial{i+1}", f"data/tutorial {i+1}")
+import os
+folders = os.listdir("data")
+
+print(folders)
