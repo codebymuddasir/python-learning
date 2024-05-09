@@ -1,16 +1,7 @@
-marks = [1, 2, 3, 4, 66, 79, 12]
+import muddasir as md
+import math
 
-
-for index, mark in enumerate(marks):
-
-    print(mark)
-
-    if(index == 4):
-     print("Muddasir, Awesom")
-
-fruits = ("apple", "banana", "kiwi" )  
-for index, fruit in enumerate(fruits)  :
-   print(fruit)
-   if(index == 2):
-      print("I love it")
-      
+print(dir(math))
+print(math.nan, type(math.nan))
+md.welcome()
+print(md.harry)
