@@ -1,7 +1,6 @@
-import muddasir as md
-import math
+a = None
+b = None
 
-print(dir(math))
-print(math.nan, type(math.nan))
-md.welcome()
-print(md.harry)
+print(a is b) # exact location of object in memory
+print(a is None) # exact location of object in memory
+print(a == b) # value
